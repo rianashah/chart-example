@@ -1,4 +1,4 @@
-# Homework 6: Chart Example
+# Chart Example
 
 In your home directory, make a folder called `Development`, if it doesn't exist. This is where we will keep all of the code for the class. Next, make sure that you are inside that folder, by checking the output of the following command:
 
