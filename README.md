@@ -28,9 +28,9 @@ python3 -m http.server
 
 Once you run this, you can open up the website by typing `http://localhost:8000/` into the browser. You'll need to open up a new tab in the terminal to continue your work. Make sure to `cd` back into this project folder and then open up the project in sublime text with `subl .`
 
-# Tasks 
+# Tasks
 
-Now we're ready to start editing the code! 
+Now we're ready to start editing the code!
 
 ### ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Example - Part 1: Splitting out HTML, CSS, and JavaScript
 The problem with the code currently in this repository is that the HTML is ill-formed (there is no head and body). Also the CSS and the JavaScript is all in the same file as the HTML. Messy! I will demand that you always keep them separated for this class. Lets go ahead and do that.
@@ -68,7 +68,7 @@ You can call a JavaScript file like with this code. In this case we're linking o
 Tasks:
 
 1. Your task is to extract the parts of `example-chart.html` and move them into three separate files. Grab the styles and move them into `styles/style.css`. Grab the javascript and move it into `scripts/chart.js`. Finally, grab the valid HTML and move it into `index.html`. Now your directory structure should look something like this:
-	
+
 	```
 	.
 	├── data.tsv
@@ -86,27 +86,27 @@ Tasks:
 	```html
 	<!DOCTYPE html>
 	<html>
-	
+
 	<head>
 		<title> Example Site </title>
-		
+
 		<!--Link to StyleSheets in the head-->
 		<link href="styles/style.css" rel="stylesheet" type="text/css">
 	</head>
-	
+
 	<body>
 		<h1> Apple: The Profitable Fruit </h1>
-	
+
 		<p> If you bought apple stock a long time ago you're probably rich. That's because it went up really fast! See for yourself in the chart below. </p>
-	
+
 		<h2> Apple Stocks are Really Rising! </h2>
 		<h3> ...more than any other fruit-based corporation. </h3>
-	
+
 		<!-- Run JavaScript scripts in the body -->
 		<script src="//d3js.org/d3.v3.min.js"></script>
 		<script src="scripts/chart.js"></script>
 	</body>
-	
+
 	</html>
 	```
 3. Commit and push to GitHub
@@ -185,9 +185,10 @@ body {
 
 Tasks:
 
-1. Modify the JavaScript code for the chart so that it appends a `class=chart` and `id=apple-stock-chart` when it generates the chart.
-2. Modify the CSS so that it applies only to the `apple-stock-chart` and doesn't spill over to any other charts that may be on the page.
-3. Commit and push to GitHub
+1. Modify the HTML so that there is an empty div with the following attributes: `class=chart` and `id=apple-stock-chart`.
+2. Modify the JavaScript so that it draws the chart on the div with id `apple-stock-chart` rather than directly on the `body`
+3. Modify the CSS so that it applies only to the div with id `apple-stock-chart` and doesn't spill over to any other charts that may be on the page.
+4. Commit and push to GitHub
 
 ### ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Example - Part 3: Using Functions
 
@@ -230,7 +231,7 @@ Tasks:
 	drawLineChart('#apple-stock-chart');
 	drawLineChart('#apple-stock-chart-2');
 	```
-	
+
 
 ### ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Bonus - Part 4
 
