@@ -19,6 +19,11 @@ body {
   stroke-width: 1.5px;
 }
 
+/* make the second chart gren (override above selector) */
+#apple-stock-chart-2 .line {
+  stroke: green;
+}
+
 .chart .overlay {
   fill: none;
   pointer-events: all;
