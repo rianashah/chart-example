@@ -75,7 +75,7 @@ Tasks:
 	├── example-chart.html
 	├── index.html
 	├── scripts
-	│   └── main.js
+	│   └── chart.js
 	└── styles
 	    └── style.css
    ```
@@ -104,7 +104,7 @@ Tasks:
 	
 		<!-- Run JavaScript scripts in the body -->
 		<script src="//d3js.org/d3.v3.min.js"></script>
-		<script src="scripts/main.js"></script>
+		<script src="scripts/chart.js"></script>
 	</body>
 	
 	</html>
