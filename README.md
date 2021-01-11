@@ -189,3 +189,49 @@ Tasks:
 2. Modify the CSS so that it applies only to the `apple-stock-chart` and doesn't spill over to any other charts that may be on the page.
 3. Commit and push to GitHub
 
+### ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Example - Part 3: Using Functions
+
+One important programming principle is to write code that is not redundant. This principle is known as writing DRY code ("Don't Repeat Yourself").
+
+Suppose you wanted the same chart type on the page twice. Instead of copy/pasting all the code for a chart, writing DRY code would mean putting the contents of the JavaScript that draws the code into it's own function.
+
+```javascript
+function drawLineChart(cssSelector){
+	// code to draw line chart goes here.
+}
+```
+
+This function above is named `drawLineChart` and takes one argument as input called `cssSelector`. It can then be called like this:
+
+```javascript
+drawLineChart('#apple-stock-chart');
+```
+
+In this case, I have just called the `drawLineChart` function with the CSS selector `#apple-stock-chart`. If I wanted to draw another chart into another part of the HTML, I would simply call the function again with a different selector as well, as shown below:
+
+
+```javascript
+drawLineChart('#apple-stock-chart');
+drawLineChart('#apple-stock-chart-2');
+```
+
+Tasks:
+
+1. Wrap the contents of `chart.js` in a function called `drawLineChart`. Then call `drawLineChart` at the bottom of the page.
+2. Update `style.css` to use a class selector (`.chart`) instead of an id selector (`#apple-stock-chart`)
+3. Add a second `<div`> to `index.html` to insert a second apple stock chart:
+
+	```html
+	<div id='apple-stock-chart-2' class='chart'></div>
+	```
+ and update `chart.js` to call the `drawLineChart` function twice as shown below:
+	 
+	```javascript
+	drawLineChart('#apple-stock-chart');
+	drawLineChart('#apple-stock-chart-2');
+	```
+	
+
+### ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Bonus - Part 4
+
+Update the styles so that only the second chart appears with a green line, while the first chart remains steelblue in color.
