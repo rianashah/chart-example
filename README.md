@@ -224,8 +224,8 @@ Tasks:
 	```html
 	<div id='apple-stock-chart-2' class='chart'></div>
 	```
- and update `chart.js` to call the `drawLineChart` function twice as shown below:
-	 
+	and update `chart.js` to call the `drawLineChart` function twice as shown below:
+
 	```javascript
 	drawLineChart('#apple-stock-chart');
 	drawLineChart('#apple-stock-chart-2');
