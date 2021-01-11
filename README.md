@@ -186,6 +186,11 @@ body {
 Tasks:
 
 1. Modify the HTML so that there is an empty div with the following attributes: `class=chart` and `id=apple-stock-chart`.
+	
+	```html
+	<div id='apple-stock-chart' class='chart'></div>
+	```
+
 2. Modify the JavaScript so that it draws the chart on the div with id `apple-stock-chart` rather than directly on the `body`
 3. Modify the CSS so that it applies only to the div with id `apple-stock-chart` and doesn't spill over to any other charts that may be on the page.
 4. Commit and push to GitHub
