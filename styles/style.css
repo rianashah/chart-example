@@ -2,29 +2,28 @@ body {
   font: 10px sans-serif;
 }
 
-#apple-stock-chart .axis path,
-#apple-stock-chart .axis line {
+.chart.axis path,
+.chart .axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
 
-#apple-stock-chart .x.axis path {
+.chart .x.axis path {
   display: none;
 }
 
-#apple-stock-chart .line {
+.chart .line {
   fill: none;
   stroke: steelblue;
   stroke-width: 1.5px;
 }
 
-#apple-stock-chart .overlay {
+.chart .overlay {
   fill: none;
   pointer-events: all;
 }
 
-#apple-stock-chart .focus circle {
-  fill: none;
+.chart .focus circle {  fill: none;
   stroke: steelblue;
 }
